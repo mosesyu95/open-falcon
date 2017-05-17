@@ -1,0 +1,70 @@
+{{template "layout/head.html" .}}
+
+<header class="text-center" style="margin-top:20px;">
+	<img src="/static/img/logo.png" width="100" height="100">
+	<h1 class="font-bold">jy-falcon</h1>
+	<h1></h1>
+</header>
+
+
+
+<div class="links">
+	<div class="link-head">
+		<span class="glyphicon glyphicon-user"></span> 人员管理
+	</div>
+	<div class="link-body">
+		<ul class="catlist">
+			<li>
+				<a href="/auth/login">平台登录/退出</a>
+			</li>
+			<li>
+				<a href="/me/profile">个人信息维护</a>
+			</li>
+			<li>
+				<a href="/me/users">通讯录</a>
+			</li>
+			<li>
+				<a href="/me/teams">用户组管理</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="link-head">
+		<span class="glyphicon glyphicon-dashboard"></span> 监控系统
+	</div>
+	<div class="link-body">
+		<ul class="catlist">
+			<li>
+				<a target="_blank" href="{{.Shortcut.FalconPortal}}">监控配置</a>
+			</li>
+			<li>
+				<a target="_blank" href="{{.Shortcut.FalconDashboard}}">监控趋势图</a>
+			</li>
+			<li>
+				<a target="_blank" href="{{.Shortcut.FalconAlarm}}">未恢复的报警</a>
+			</li>
+			<li>
+				<a target="_blank" href="http://falcon.jiayuan.inc:8081/screen">定制监控图</a>
+			</li>
+		</ul>
+	</div>
+	<div class="link-head">
+		<span class="glyphicon glyphicon-briefcase"></span> 快速链接
+	</div>
+	<div class="link-body">
+		<ul class="catlist">
+			<li>
+				<a target="_blank" href="http://falcon.jiayuan.inc:8081/screen/958?legend=on">机房上联流量</a>
+			</li>
+			<li>
+				<a target="_blank" href="http://falcon.jiayuan.inc:8081/screen/956?legend=on">falcon监控数据</a>
+			</li>
+			<li>
+				<a target="_blank" href="{{.Shortcut.FalconAlarm}}">。。。。</a>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+{{template "layout/foot.html" .}}
